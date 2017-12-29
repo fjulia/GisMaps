@@ -1,15 +1,15 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "description": "Starter for your Electron application",
+  "name": "gis-maps",
+  "productName": "Gis Maps",
+  "description": "Google Maps electron version",
   "version": "0.0.0",
   "private": true,
-  "author": "Mr. Gumby <mr.gumby@example.com>",
+  "author": "Ferran Julià <ferran.julia@gmail.com>",
   "copyright": "© 2017, Gumby inc.",
-  "homepage": "http://example.com",
+  "homepage": "http://ferranjulia.com",
   "main": "app/background.js",
   "build": {
-    "appId": "com.example.electron-boilerplate",
+    "appId": "com.ferranjulia.gismaps",
     "files": [
       "app/**/*",
       "node_modules/**/*",
@@ -31,6 +31,8 @@
     "release": "npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder"
   },
   "dependencies": {
+    "electron-log": "^2.2.13",
+    "electron-settings": "^3.1.4",
     "fs-jetpack": "^1.0.0"
   },
   "devDependencies": {

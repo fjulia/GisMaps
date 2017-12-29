@@ -22,3 +22,7 @@ a {
 .container {
   text-align: center;
 }
+
+#map {
+  height: 100%;
+}

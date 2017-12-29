@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>Posicions SIG</name>
+<open>0</open>
+<Snippet maxLines="2">Created 17/06/14 10:21:58</Snippet>
+
+<Style id="w_BlauP_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauP_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauP"><Pair><key>normal</key><styleUrl>#w_BlauP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Blau_n"><IconStyle><color>ffff0000</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Blau_s"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Blau"><Pair><key>normal</key><styleUrl>#w_Blau_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Blau_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauC_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauC_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauC"><Pair><key>normal</key><styleUrl>#w_BlauC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauH_n"><IconStyle><color>ffff0000</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauH_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauH"><Pair><key>normal</key><styleUrl>#w_BlauH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauA_n"><IconStyle><color>ffff0000</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauA_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauA"><Pair><key>normal</key><styleUrl>#w_BlauA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauBAR_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauBAR_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauBAR"><Pair><key>normal</key><styleUrl>#w_BlauBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarP_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarP_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarP"><Pair><key>normal</key><styleUrl>#w_VerdclarP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Verdclar_n"><IconStyle><color>ff00ff00</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Verdclar_s"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Verdclar"><Pair><key>normal</key><styleUrl>#w_Verdclar_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Verdclar_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarC_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarC_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarC"><Pair><key>normal</key><styleUrl>#w_VerdclarC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarH_n"><IconStyle><color>ff00ff00</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarH_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarH"><Pair><key>normal</key><styleUrl>#w_VerdclarH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarA_n"><IconStyle><color>ff00ff00</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarA_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarA"><Pair><key>normal</key><styleUrl>#w_VerdclarA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarBAR_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarBAR_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarBAR"><Pair><key>normal</key><styleUrl>#w_VerdclarBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellP_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellP_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellP"><Pair><key>normal</key><styleUrl>#w_VermellP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Vermell_n"><IconStyle><color>ff0000ff</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Vermell_s"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Vermell"><Pair><key>normal</key><styleUrl>#w_Vermell_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Vermell_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellC_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellC_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellC"><Pair><key>normal</key><styleUrl>#w_VermellC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellH_n"><IconStyle><color>ff0000ff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellH_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellH"><Pair><key>normal</key><styleUrl>#w_VermellH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellA_n"><IconStyle><color>ff0000ff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellA_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellA"><Pair><key>normal</key><styleUrl>#w_VermellA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellBAR_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellBAR_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellBAR"><Pair><key>normal</key><styleUrl>#w_VermellBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocP_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocP_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocP"><Pair><key>normal</key><styleUrl>#w_GrocP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Groc_n"><IconStyle><color>ff00ffff</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Groc_s"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Groc"><Pair><key>normal</key><styleUrl>#w_Groc_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Groc_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocC_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocC_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocC"><Pair><key>normal</key><styleUrl>#w_GrocC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocH_n"><IconStyle><color>ff00ffff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocH_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocH"><Pair><key>normal</key><styleUrl>#w_GrocH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocA_n"><IconStyle><color>ff00ffff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocA_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocA"><Pair><key>normal</key><styleUrl>#w_GrocA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocBAR_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocBAR_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocBAR"><Pair><key>normal</key><styleUrl>#w_GrocBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="Descarrega_Verd"><IconStyle><color>ff00ff00</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Vermell"><IconStyle><color>ff0000ff</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_GrocClar"><IconStyle><color>ff80FFFF</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Lilla"><IconStyle><color>ff82284C</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_VerdFosc"><IconStyle><color>ff008000</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Negre"><IconStyle><color>ff000000</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Gris"><IconStyle><color>ff808080</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_GrisClar"><IconStyle><color>ffC0C0C0</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_LillaClar"><IconStyle><color>ffEE687B</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Blau"><IconStyle><color>ffff0000</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Taronja"><IconStyle><color>ff0080FF</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_BlauClar"><IconStyle><color>ffFFFF80</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Marro"><IconStyle><color>ff004080</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Fucsia"><IconStyle><color>ffFF00FF</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Groc"><IconStyle><color>ff00ffff</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="actuacio"><IconStyle><color>ff00ffff</color><scale>0.8</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="poly"> <LineStyle> <color>ff00ffff</color> <width>2</width> </LineStyle> <PolyStyle> <color>44000000</color> </PolyStyle> </Style>
+
+<name>Descàrregues</name>
+
+<Folder>
+
+<Placemark><name>05083 07:05</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>2.10769415821782,41.5180550799933,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 07:05</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>2.10769415821782,41.5180550799933,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:16</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.633290439191139,41.0660219899799,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:16</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.633290439191139,41.0660219899799,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:26</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.686352509571287,41.0039959943037,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:26</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.686352509571287,41.0039959943037,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:31</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.686397830457816,41.0040599548187,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:31</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.686397830457816,41.0040599548187,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:36</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.691478695185391,41.0059903366422,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:36</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.691478695185391,41.0059903366422,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 07:40</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.702956592218854,41.0000588200292,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 07:40</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.702956592218854,41.0000588200292,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:42</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693207103491616,41.0045027396417,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:42</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693207103491616,41.0045027396417,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:47</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693281218962572,41.004423158759,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:47</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693281218962572,41.004423158759,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:52</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.692789354050536,41.006593052595,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:52</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.692789354050536,41.006593052595,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 07:54</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.706898393921396,40.9978134780588,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 07:54</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.706898393921396,40.9978134780588,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:57</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.694586170611747,41.0055301434458,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 07:57</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.694586170611747,41.0055301434458,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:02</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.695120493031128,41.0058921152829,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:02</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.695120493031128,41.0058921152829,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:07</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.70602929608021,40.998877044017,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:07</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.70602929608021,40.998877044017,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:07</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693329373110445,41.0044061084758,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:07</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693329373110445,41.0044061084758,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:13</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.694704987998905,41.0055325209938,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:13</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.694704987998905,41.0055325209938,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:17</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.629562206616522,41.0853194907804,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:17</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.629562206616522,41.0853194907804,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:19</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693467190981934,41.0048862495125,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:19</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693467190981934,41.0048862495125,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:20</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.70634008340308,40.9991714626723,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:20</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.70634008340308,40.9991714626723,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:20</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.657381563172963,41.0290359137328,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:20</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.657381563172963,41.0290359137328,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:23</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.692390456377741,41.0003070418753,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:23</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.692390456377741,41.0003070418753,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:25</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.692287883460034,41.0042681580087,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:25</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.692287883460034,41.0042681580087,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:26</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.656876546211325,41.028854506857,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:26</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.656876546211325,41.028854506857,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:27</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693554047669129,41.0010329041114,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:27</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693554047669129,41.0010329041114,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:29</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.707249343221577,40.9955776630051,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:29</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.707249343221577,40.9955776630051,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:30</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.69310560981127,41.0016184016175,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:30</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.69310560981127,41.0016184016175,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:32</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693183752877231,41.001764081579,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:32</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693183752877231,41.001764081579,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:33</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.665010130562378,40.9639247049673,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:33</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.665010130562378,40.9639247049673,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:33</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.706880020740142,40.9990290876204,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:33</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.706880020740142,40.9990290876204,0</coordinates></Point></Placemark>
+
+<Placemark><name>05082 08:33</name><description>05082</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.712093422598117,40.994385922171,0</coordinates></Point></Placemark>
+
+<Placemark><name>05082 08:33</name><description>05082</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.712093422598117,40.994385922171,0</coordinates></Point></Placemark>
+
+<Placemark><name>05084 08:33</name><description>05084</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.703536264992842,41.0018538048231,0</coordinates></Point></Placemark>
+
+<Placemark><name>05084 08:33</name><description>05084</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.703536264992842,41.0018538048231,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:36</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.694004220388269,41.0014202180823,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:36</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.694004220388269,41.0014202180823,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:37</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693393052273798,41.0008765584588,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:37</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693393052273798,41.0008765584588,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:38</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.709840638445551,40.9859734419502,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:38</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.709840638445551,40.9859734419502,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:42</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693189718990783,41.0015930640909,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:42</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693189718990783,41.0015930640909,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:43</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693238914676364,41.0008644652292,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:43</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.693238914676364,41.0008644652292,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:44</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.692985961980447,41.0030031156462,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:44</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.692985961980447,41.0030031156462,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:47</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.707992099079092,40.9988440499788,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 08:47</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.707992099079092,40.9988440499788,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:47</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693780147047521,41.0006861490497,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:47</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693780147047521,41.0006861490497,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:49</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.693288857863241,41.003522591238,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:49</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.693288857863241,41.003522591238,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:51</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.706499905611766,40.99456294471,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:51</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.706499905611766,40.99456294471,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:52</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693905139055291,41.0011930546812,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:52</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693905139055291,41.0011930546812,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:55</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.69213153900494,41.0043190694693,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 08:55</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.69213153900494,41.0043190694693,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:57</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.689680388522336,41.0033512077719,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 08:57</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.689680388522336,41.0033512077719,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:57</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.707449983522396,40.9945908603183,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 08:57</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.707449983522396,40.9945908603183,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:01</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.691901450057846,41.0040982872618,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:01</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.691901450057846,41.0040982872618,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:02</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693978261129131,41.0014827489576,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:02</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.693978261129131,41.0014827489576,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 09:04</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.704733273362472,40.995455508826,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 09:04</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.704733273362472,40.995455508826,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:06</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.692574978948187,41.0038775913364,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:06</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.692574978948187,41.0038775913364,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:06</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.692538461798549,41.001516972083,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:06</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.692538461798549,41.001516972083,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 09:08</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.637099447561647,41.0749721602453,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 09:08</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.637099447561647,41.0749721602453,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:14</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.705966231532955,40.994183023759,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:14</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.705966231532955,40.994183023759,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:14</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.704425731231638,40.9991783721667,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:14</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.704425731231638,40.9991783721667,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:16</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.682484038909753,41.0132767119425,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:16</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.682484038909753,41.0132767119425,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:18</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.623870480974664,41.077762378652,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:18</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.623870480974664,41.077762378652,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:20</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.70630463018419,40.996765828032,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:20</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.70630463018419,40.996765828032,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:20</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.705074439038683,40.9979573060825,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:20</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.705074439038683,40.9979573060825,0</coordinates></Point></Placemark>
+
+<Placemark><name>05082 09:21</name><description>05082</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.709162378844079,40.9959489833146,0</coordinates></Point></Placemark>
+
+<Placemark><name>05082 09:21</name><description>05082</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.709162378844079,40.9959489833146,0</coordinates></Point></Placemark>
+
+<Placemark><name>05084 09:21</name><description>05084</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.706361606288602,40.9982081182622,0</coordinates></Point></Placemark>
+
+<Placemark><name>05084 09:21</name><description>05084</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.706361606288602,40.9982081182622,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:23</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.656673285970463,41.0292196649541,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:23</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.656673285970463,41.0292196649541,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:26</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.705130417099024,40.9983997749991,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:26</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.705130417099024,40.9983997749991,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:26</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.705752845130289,40.9972502391648,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:26</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.705752845130289,40.9972502391648,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:26</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.705856927066439,40.996648827602,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:26</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.705856927066439,40.996648827602,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:33</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.706808137010849,40.9942448197145,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:33</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.706808137010849,40.9942448197145,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:34</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.707601901089678,40.9943236661469,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:34</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.707601901089678,40.9943236661469,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:34</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.708333062175079,40.9934645099051,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:34</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.708333062175079,40.9934645099051,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:40</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.706450787013358,40.9939224536729,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:40</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.706450787013358,40.9939224536729,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:40</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.708713181007818,40.9931297950174,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:40</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.708713181007818,40.9931297950174,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:41</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.70596812138823,40.9944712927026,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:41</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.70596812138823,40.9944712927026,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:46</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.707448686737747,40.9939423139555,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:46</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.707448686737747,40.9939423139555,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:46</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.706490171598398,40.9938151509161,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:46</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.706490171598398,40.9938151509161,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:47</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.705211896714564,40.9950236886098,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:47</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.705211896714564,40.9950236886098,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 09:49</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>1.16341666887407,41.1488710483926,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 09:49</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>1.16341666887407,41.1488710483926,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:49</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.662056547342944,41.0424614500639,0</coordinates></Point></Placemark>
+
+<Placemark><name>05051 09:49</name><description>05051</description><styleUrl>Descarrega_Gris</styleUrl><Point><coordinates>0.662056547342944,41.0424614500639,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:53</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.709060184334205,40.9930646373762,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:53</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.709060184334205,40.9930646373762,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:54</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.706609321242054,40.9944930648598,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 09:54</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.706609321242054,40.9944930648598,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:59</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.709330575733729,40.9928088036611,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 09:59</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.709330575733729,40.9928088036611,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:01</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.633306713991553,41.0725344328835,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:01</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.633306713991553,41.0725344328835,0</coordinates></Point></Placemark>
+
+<Placemark><name>05082 10:01</name><description>05082</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.710759324814258,40.9934316776399,0</coordinates></Point></Placemark>
+
+<Placemark><name>05082 10:01</name><description>05082</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.710759324814258,40.9934316776399,0</coordinates></Point></Placemark>
+
+<Placemark><name>05084 10:02</name><description>05084</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.708030700908117,40.9967010981353,0</coordinates></Point></Placemark>
+
+<Placemark><name>05084 10:02</name><description>05084</description><styleUrl>Descarrega_Taronja</styleUrl><Point><coordinates>0.708030700908117,40.9967010981353,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 10:03</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.706184473729602,40.9947458170704,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 10:03</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.706184473729602,40.9947458170704,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:06</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.666643048472708,40.966479806951,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:06</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.666643048472708,40.966479806951,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 10:06</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.704560784373517,40.9987126874495,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 10:06</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.704560784373517,40.9987126874495,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 10:07</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.690261160109121,41.0057857896558,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 10:07</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.690261160109121,41.0057857896558,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 10:10</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.704951174007472,40.9953427555827,0</coordinates></Point></Placemark>
+
+<Placemark><name>05011 10:10</name><description>05011</description><styleUrl>Descarrega_Verd</styleUrl><Point><coordinates>0.704951174007472,40.9953427555827,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:10</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.667240275522638,40.9717881484697,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:10</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.667240275522638,40.9717881484697,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 10:13</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.708306807931332,40.9935360455588,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 10:13</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.708306807931332,40.9935360455588,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:16</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.704609787475557,40.9955881571248,0</coordinates></Point></Placemark>
+
+<Placemark><name>05008 10:16</name><description>05008</description><styleUrl>Descarrega_Groc</styleUrl><Point><coordinates>0.704609787475557,40.9955881571248,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 10:19</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.707030197275577,40.9957264247446,0</coordinates></Point></Placemark>
+
+<Placemark><name>05083 10:19</name><description>05083</description><styleUrl>Descarrega_Blau</styleUrl><Point><coordinates>0.707030197275577,40.9957264247446,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 10:19</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.707514686561658,40.9944390248429,0</coordinates></Point></Placemark>
+
+<Placemark><name>05071 10:19</name><description>05071</description><styleUrl>Descarrega_LillaClar</styleUrl><Point><coordinates>0.707514686561658,40.9944390248429,0</coordinates></Point></Placemark>
+
+</Folder></Document></kml>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>Recuadre_SIG</name>
+<open>0</open>
+<Snippet maxLines="2">Created 2017/12/29 10:29:40</Snippet>
+
+<Style id="w_Blau_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<Style id="w_Blau_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<StyleMap id="w_Blau"><Pair><key>normal</key><styleUrl>#w_Blau_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Blau_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Verdclar_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<Style id="w_Verdclar_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<StyleMap id="w_Verdclar"><Pair><key>normal</key><styleUrl>#w_Verdclar_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Verdclar_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Vermell_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<Style id="w_Vermell_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<StyleMap id="w_Vermell"><Pair><key>normal</key><styleUrl>#w_Vermell_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Vermell_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Groc_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<Style id="w_Groc_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><ListStyle></ListStyle></Style>
+<StyleMap id="w_Groc"><Pair><key>normal</key><styleUrl>#w_Groc_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Groc_s</styleUrl></Pair></StyleMap>
+
+<Style id="poly"> <LineStyle> <color>44ffffff</color> </LineStyle> <PolyStyle> <color>44ffffff</color> </PolyStyle> </Style>
+<Placemark>
+<name>PantallaSIGB</name>
+<styleUrl>poly</styleUrl> <Polygon>
+<extrude>1</extrude>
+<altitudMode>relativeToGround</altitudMode>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+1.99160896895238,41.4908507715356,0
+2.0725799337783,41.4915296462393,0
+2.07305187125914,41.4584159393058,0
+1.99212209389586,41.4577378521993,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Folder>
+
+</Folder></Document></kml>

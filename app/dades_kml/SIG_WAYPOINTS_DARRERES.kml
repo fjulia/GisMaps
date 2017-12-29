@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>Posicions SIG</name>
+<open>0</open>
+<Snippet maxLines="2">Created 2017/12/29 12:16:49</Snippet>
+
+<Style id="w_BlauP_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauP_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauP"><Pair><key>normal</key><styleUrl>#w_BlauP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Blau_n"><IconStyle><color>ffff0000</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Blau_s"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Blau"><Pair><key>normal</key><styleUrl>#w_Blau_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Blau_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauC_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauC_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauC"><Pair><key>normal</key><styleUrl>#w_BlauC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauH_n"><IconStyle><color>ffff0000</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauH_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauH"><Pair><key>normal</key><styleUrl>#w_BlauH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauA_n"><IconStyle><color>ffff0000</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauA_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauA"><Pair><key>normal</key><styleUrl>#w_BlauA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_BlauBAR_n"><IconStyle><color>ffff0000</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_BlauBAR_s"><IconStyle><color>ffff0000</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_BlauBAR"><Pair><key>normal</key><styleUrl>#w_BlauBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_BlauBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarP_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarP_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarP"><Pair><key>normal</key><styleUrl>#w_VerdclarP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Verdclar_n"><IconStyle><color>ff00ff00</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Verdclar_s"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Verdclar"><Pair><key>normal</key><styleUrl>#w_Verdclar_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Verdclar_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarC_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarC_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarC"><Pair><key>normal</key><styleUrl>#w_VerdclarC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarH_n"><IconStyle><color>ff00ff00</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarH_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarH"><Pair><key>normal</key><styleUrl>#w_VerdclarH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarA_n"><IconStyle><color>ff00ff00</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarA_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarA"><Pair><key>normal</key><styleUrl>#w_VerdclarA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VerdclarBAR_n"><IconStyle><color>ff00ff00</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VerdclarBAR_s"><IconStyle><color>ff00ff00</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VerdclarBAR"><Pair><key>normal</key><styleUrl>#w_VerdclarBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VerdclarBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellP_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellP_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellP"><Pair><key>normal</key><styleUrl>#w_VermellP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Vermell_n"><IconStyle><color>ff0000ff</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Vermell_s"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Vermell"><Pair><key>normal</key><styleUrl>#w_Vermell_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Vermell_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellC_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellC_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellC"><Pair><key>normal</key><styleUrl>#w_VermellC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellH_n"><IconStyle><color>ff0000ff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellH_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellH"><Pair><key>normal</key><styleUrl>#w_VermellH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellA_n"><IconStyle><color>ff0000ff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellA_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellA"><Pair><key>normal</key><styleUrl>#w_VermellA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_VermellBAR_n"><IconStyle><color>ff0000ff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_VermellBAR_s"><IconStyle><color>ff0000ff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_VermellBAR"><Pair><key>normal</key><styleUrl>#w_VermellBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_VermellBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocP_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocP_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/man.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocP"><Pair><key>normal</key><styleUrl>#w_GrocP_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocP_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_Groc_n"><IconStyle><color>ff00ffff</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_Groc_s"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_Groc"><Pair><key>normal</key><styleUrl>#w_Groc_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_Groc_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocC_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocC_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/truck.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocC"><Pair><key>normal</key><styleUrl>#w_GrocC_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocC_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocH_n"><IconStyle><color>ff00ffff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocH_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/heliport.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocH"><Pair><key>normal</key><styleUrl>#w_GrocH_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocH_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocA_n"><IconStyle><color>ff00ffff</color><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocA_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocA"><Pair><key>normal</key><styleUrl>#w_GrocA_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocA_s</styleUrl></Pair></StyleMap>
+
+<Style id="w_GrocBAR_n"><IconStyle><color>ff00ffff</color><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="w_GrocBAR_s"><IconStyle><color>ff00ffff</color><scale>1.4</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href></Icon><hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<StyleMap id="w_GrocBAR"><Pair><key>normal</key><styleUrl>#w_GrocBAR_n</styleUrl></Pair><Pair><key>highlight</key><styleUrl>#w_GrocBAR_s</styleUrl></Pair></StyleMap>
+
+<Style id="Descarrega_Verd"><IconStyle><color>ff00ff00</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Vermell"><IconStyle><color>ff0000ff</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_GrocClar"><IconStyle><color>ff80FFFF</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Lilla"><IconStyle><color>ff82284C</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_VerdFosc"><IconStyle><color>ff008000</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Negre"><IconStyle><color>ff000000</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Gris"><IconStyle><color>ff808080</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_GrisClar"><IconStyle><color>ffC0C0C0</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_LillaClar"><IconStyle><color>ffEE687B</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Blau"><IconStyle><color>ffff0000</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Taronja"><IconStyle><color>ff0080FF</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_BlauClar"><IconStyle><color>ffFFFF80</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Marro"><IconStyle><color>ff004080</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Fucsia"><IconStyle><color>ffFF00FF</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="Descarrega_Groc"><IconStyle><color>ff00ffff</color><scale>0.5</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/road_shield3.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="actuacio"><IconStyle><color>ff00ffff</color><scale>0.8</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/caution.png</href></Icon></IconStyle><LabelStyle><scale>0.7</scale></LabelStyle></Style>
+<Style id="poly"> <LineStyle> <color>ff00ffff</color> <width>2</width> </LineStyle> <PolyStyle> <color>44000000</color> </PolyStyle> </Style>
+
+<name>Vehicles</name>
+
+<Folder>
+
+<Placemark><name>03452</name><description>203452 GRAE GRAE</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>2.27765256612811,41.5664004341864,0</coordinates></Point></Placemark>
+
+<Placemark><name>08090</name><description>208090  VARAN</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.797047783036168,42.7080333196195,0</coordinates></Point></Placemark>
+
+<Placemark><name>10085</name><description>210085 UPCL/USL REGIÓ</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>1.86513469708954,42.1818603403798,0</coordinates></Point></Placemark>
+
+<Placemark><name>10331</name><description>210331 BRP BER</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>1.86755696226928,42.187260839197,0</coordinates></Point></Placemark>
+
+<Placemark><name>10430</name><description>210430 BRP CAF</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.5134254563215,41.7321876066911,0</coordinates></Point></Placemark>
+
+<Placemark><name>11034</name><description>211034 BFP MAN</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.85208735555741,41.7418924137794,0</coordinates></Point></Placemark>
+
+<Placemark><name>11044</name><description>211044 BNP MAN</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.85216142259446,41.7417850697488,0</coordinates></Point></Placemark>
+
+<Placemark><name>11090</name><description>211090 UPC MAN</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>1.82839529672838,41.7280629222685,0</coordinates></Point></Placemark>
+
+<Placemark><name>11130</name><description>211130 BRP MOI</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.12020755173369,41.8112512079766,0</coordinates></Point></Placemark>
+
+<Placemark><name>11930</name><description>211930 BRP SOLS</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>1.52781641090594,41.9942890133004,0</coordinates></Point></Placemark>
+
+<Placemark><name>200201</name><description>200201 PORT Dept.</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>0.914801794202044,42.7040531605399,0</coordinates></Point></Placemark>
+
+<Placemark><name>20130</name><description>220130 BRP AMER</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.59398064849872,42.0201911494091,0</coordinates></Point></Placemark>
+
+<Placemark><name>203206</name><description>203206 GRAE GRAE</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.16778419753508,42.2521358824032,0</coordinates></Point></Placemark>
+
+<Placemark><name>203491</name><description>203491 GRAE GRAE</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.11201320261072,41.502329709885,0</coordinates></Point></Placemark>
+
+<Placemark><name>20434</name><description>220434 BFP PERA</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.97581189573581,42.0301267470521,0</coordinates></Point></Placemark>
+
+<Placemark><name>205208</name><description>205208 OP.COMANDAMENT MAER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.10521400790337,41.5236242913891,0</coordinates></Point></Placemark>
+
+<Placemark><name>20631</name><description>220631 BRP CALO</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>3.15473453405478,41.9259089401112,0</coordinates></Point></Placemark>
+
+<Placemark><name>210091</name><description>210091 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.85197080811024,41.7416840978048,0</coordinates></Point></Placemark>
+
+<Placemark><name>210357</name><description>210357 PORT.COM BER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.85770902297402,42.1039375703998,0</coordinates></Point></Placemark>
+
+<Placemark><name>210656</name><description>210656 PORT.COM CAB</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.60899684615412,41.5829305121285,0</coordinates></Point></Placemark>
+
+<Placemark><name>211401</name><description>211401 PORT PRA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.85220839465807,41.7418485846888,0</coordinates></Point></Placemark>
+
+<Placemark><name>211407</name><description>211407 PORT PRA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03597422393415,42.0081730373419,0</coordinates></Point></Placemark>
+
+<Placemark><name>21190</name><description>221190 UPC GIRO</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.83583949493158,41.6995802257761,0</coordinates></Point></Placemark>
+
+<Placemark><name>212156</name><description>212156 PORT.COM VIC</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.26920666200406,41.9419792525023,0</coordinates></Point></Placemark>
+
+<Placemark><name>212157</name><description>212157 PORT.COM VIC</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.26930881888691,41.9414845377447,0</coordinates></Point></Placemark>
+
+<Placemark><name>21330</name><description>221330 BRP JONQ</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.90472824919982,42.3547752144296,0</coordinates></Point></Placemark>
+
+<Placemark><name>220092</name><description>220092 UPC REGIÓ</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>2.95697618402945,42.1590843621562,0</coordinates></Point></Placemark>
+
+<Placemark><name>220330</name><description>220330 BRP BANY</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.77434956929772,42.0913054647086,0</coordinates></Point></Placemark>
+
+<Placemark><name>220630</name><description>220630 BRP CALO</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>3.07280444361941,41.8496125114393,0</coordinates></Point></Placemark>
+
+<Placemark><name>220656</name><description>220656 PORT.COM CALO</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>3.07474729154177,41.8525294762188,0</coordinates></Point></Placemark>
+
+<Placemark><name>221056</name><description>221056 PORT.COM FIGU</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.97080832622817,42.2722521367013,0</coordinates></Point></Placemark>
+
+<Placemark><name>221060</name><description>221060 AEA/AES/ABA FIGU</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.97069923835386,42.2721440351388,0</coordinates></Point></Placemark>
+
+<Placemark><name>221230</name><description>221230 BRP HOST</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.62679236783456,41.7456414563763,0</coordinates></Point></Placemark>
+
+<Placemark><name>221356</name><description>221356 PORT.COM JONQ</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.91559894013776,42.3432019438063,0</coordinates></Point></Placemark>
+
+<Placemark><name>221357</name><description>221357 PORT.COM JONQ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.8768230913903,42.4118196041675,0</coordinates></Point></Placemark>
+
+<Placemark><name>221456</name><description>221456 PORT.COM LLAN</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>3.15363997970634,42.3576210443274,0</coordinates></Point></Placemark>
+
+<Placemark><name>221630</name><description>221630 BRP MACA</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.71785477247289,41.793366705232,0</coordinates></Point></Placemark>
+
+<Placemark><name>221657</name><description>221657 PORT.COM MACA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.75311327941506,41.779297735027,0</coordinates></Point></Placemark>
+
+<Placemark><name>221856</name><description>221856 PORT.COM PALA</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>3.15580816715959,41.9260065673732,0</coordinates></Point></Placemark>
+
+<Placemark><name>222157</name><description>222157 PORT.COM RIPO</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.16826643606676,42.2154214247783,0</coordinates></Point></Placemark>
+
+<Placemark><name>222230</name><description>222230 BRP ROSE</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>3.16092488093475,42.2763402244155,0</coordinates></Point></Placemark>
+
+<Placemark><name>22231</name><description>222231 BRP ROSE</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>3.1614703048796,42.2762223807706,0</coordinates></Point></Placemark>
+
+<Placemark><name>222556</name><description>222556 PORT.COM SCFA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.67789692520113,41.8532746056795,0</coordinates></Point></Placemark>
+
+<Placemark><name>222604</name><description>222604 PORT TORR</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>3.16717413866801,42.0478319003133,0</coordinates></Point></Placemark>
+
+<Placemark><name>222807</name><description>222807 PORT VALL</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>3.03112861629966,41.8088212589599,0</coordinates></Point></Placemark>
+
+<Placemark><name>222857</name><description>222857 PORT.COM VALL</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>3.0315620029335,41.8088121342796,0</coordinates></Point></Placemark>
+
+<Placemark><name>22531</name><description>222531 BRP SCFA</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.67858165291697,41.8536638090035,0</coordinates></Point></Placemark>
+
+<Placemark><name>228045</name><description>228045  SERVEIS REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.8058730600175,41.9603088106261,0</coordinates></Point></Placemark>
+
+<Placemark><name>22848</name><description>222848 BUL VALL</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>3.03159808344083,41.8087400693435,0</coordinates></Point></Placemark>
+
+<Placemark><name>240011</name><description>240011 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03538704183695,41.4735582731938,0</coordinates></Point></Placemark>
+
+<Placemark><name>240014</name><description>240014 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.11201566358305,41.5021495842913,0</coordinates></Point></Placemark>
+
+<Placemark><name>240092</name><description>240092 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.50717767086663,41.6947982951175,0</coordinates></Point></Placemark>
+
+<Placemark><name>240204</name><description>240204 PORT BAD</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.11223541477022,41.5027277368979,0</coordinates></Point></Placemark>
+
+<Placemark><name>240556</name><description>240556 PORT.COM CER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.11120855460241,41.5024676332127,0</coordinates></Point></Placemark>
+
+<Placemark><name>241048</name><description>241048 BUL MOL</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.20428843321399,41.5361312012164,0</coordinates></Point></Placemark>
+
+<Placemark><name>241401</name><description>241401 PORT SAB</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.10395907767724,41.5424755843327,0</coordinates></Point></Placemark>
+
+<Placemark><name>250014</name><description>250014 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03459392766715,41.3225882903065,0</coordinates></Point></Placemark>
+
+<Placemark><name>250091</name><description>250091 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.03394945368127,41.3225378657063,0</coordinates></Point></Placemark>
+
+<Placemark><name>250092</name><description>250092 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.7042022532483,41.3548527484446,0</coordinates></Point></Placemark>
+
+<Placemark><name>250490</name><description>250490 UPC COR</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.03453964315348,41.3222185301898,0</coordinates></Point></Placemark>
+
+<Placemark><name>250557</name><description>250557 PORT.COM GAV</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.99141789261875,41.2997367657204,0</coordinates></Point></Placemark>
+
+<Placemark><name>251050</name><description>251050 FSV/FRQ/FER/FRM/FRA/FSA MAR</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.90783756779941,41.4987230962166,0</coordinates></Point></Placemark>
+
+<Placemark><name>251057</name><description>251057 PORT.COM MAR</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.90788623979824,41.4986785208881,0</coordinates></Point></Placemark>
+
+<Placemark><name>251256</name><description>251256 PORT.COM PLL</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.08152863419546,41.3174133322032,0</coordinates></Point></Placemark>
+
+<Placemark><name>251257</name><description>251257 PORT.COM PLL</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.0816676285785,41.3168739871302,0</coordinates></Point></Placemark>
+
+<Placemark><name>251357</name><description>251357 PORT.COM SBOI</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03438870089658,41.3227306947814,0</coordinates></Point></Placemark>
+
+<Placemark><name>251505</name><description>251505 PORT SFE</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.04585738132921,41.3916156952663,0</coordinates></Point></Placemark>
+
+<Placemark><name>251556</name><description>251556 PORT.COM SFE</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.04312565928772,41.3886656983572,0</coordinates></Point></Placemark>
+
+<Placemark><name>30091</name><description>230091 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.605365359264001,41.6236360581663,0</coordinates></Point></Placemark>
+
+<Placemark><name>30092</name><description>230092 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.14959891232246,41.6509082019036,0</coordinates></Point></Placemark>
+
+<Placemark><name>30690</name><description>230690 UPC </description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.81006330697156,41.7900243859192,0</coordinates></Point></Placemark>
+
+<Placemark><name>31134</name><description>231134 BFP ESPO</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.10311296716411,42.5630173830898,0</coordinates></Point></Placemark>
+
+<Placemark><name>32950</name><description>232950 FSV/FRQ/FER/FRM/FRA/FSA SEU</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.45657390930926,42.359151908517,0</coordinates></Point></Placemark>
+
+<Placemark><name>32991</name><description>232991 UPC SEU</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>1.14281805104618,42.3988040267239,0</coordinates></Point></Placemark>
+
+<Placemark><name>40430</name><description>240430 BRP CAS</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.09037458100699,41.5964120251833,0</coordinates></Point></Placemark>
+
+<Placemark><name>40690</name><description>240690 UPC GRA</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.27460515971338,41.5922228420714,0</coordinates></Point></Placemark>
+
+<Placemark><name>40990</name><description>240990 UPC MAT</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>2.24407890375858,41.4647908780304,0</coordinates></Point></Placemark>
+
+<Placemark><name>41460</name><description>241460 AEA/AES/ABA SAB</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.09948898160165,41.5673995848561,0</coordinates></Point></Placemark>
+
+<Placemark><name>41848</name><description>241848 BUL SCG</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.2058961269668,41.4506903290925,0</coordinates></Point></Placemark>
+
+<Placemark><name>41880</name><description>241880 UPCL/USL SCG</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>2.21092502962842,41.4575523600461,0</coordinates></Point></Placemark>
+
+<Placemark><name>42090</name><description>242090 UPC TER</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>2.11195030420676,41.5016716985061,0</coordinates></Point></Placemark>
+
+<Placemark><name>50531</name><description>250531 BRP GAV</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.04573896989444,41.3915336506038,0</coordinates></Point></Placemark>
+
+<Placemark><name>50590</name><description>250590 UPC GAV</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.99017932005679,41.3002754044133,0</coordinates></Point></Placemark>
+
+<Placemark><name>50830</name><description>250830 BRP IGU</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.6089144411932,41.5828574634418,0</coordinates></Point></Placemark>
+
+<Placemark><name>50890</name><description>250890 UPC IGU</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>1.61218788164953,41.5846081932714,0</coordinates></Point></Placemark>
+
+<Placemark><name>51040</name><description>251040 BUP MAR</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.90673324101921,41.4988477502479,0</coordinates></Point></Placemark>
+
+<Placemark><name>51430</name><description>251430 BRP SCLI</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>2.03589148301083,41.3723381959442,0</coordinates></Point></Placemark>
+
+<Placemark><name>51630</name><description>251630 BRP SCC</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>2.00944246683219,41.3998390825687,0</coordinates></Point></Placemark>
+
+<Placemark><name>60092</name><description>260092 UPC REGIÓ</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>1.11471020111696,41.3984613882879,0</coordinates></Point></Placemark>
+
+<Placemark><name>60095</name><description>260095 UPC REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.823469649721342,41.1476674009025,0</coordinates></Point></Placemark>
+
+<Placemark><name>60130</name><description>260130 BRP ALCO</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.20685940858813,41.2103301268826,0</coordinates></Point></Placemark>
+
+<Placemark><name>60190</name><description>260190 UPC ALCO</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.20684650251568,41.2103659554965,0</coordinates></Point></Placemark>
+
+<Placemark><name>60490</name><description>260490 UPC FALS</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>0.501200297142054,40.8721935154726,0</coordinates></Point></Placemark>
+
+<Placemark><name>60630</name><description>260630 BRP MONT</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.10866563019574,41.4002449708687,0</coordinates></Point></Placemark>
+
+<Placemark><name>60860</name><description>260860 AEA/AES/ABA REUS</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.11889070595796,41.1513216024758,0</coordinates></Point></Placemark>
+
+<Placemark><name>61130</name><description>261130 BRP SARR</description><styleUrl>#w_GrocC</styleUrl><Point><coordinates>1.10899289128228,41.4000972141999,0</coordinates></Point></Placemark>
+
+<Placemark><name>61290</name><description>261290 UPC TARR</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.22152222739356,41.1141065875612,0</coordinates></Point></Placemark>
+
+<Placemark><name>61348</name><description>261348 BUL VALS</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>1.18874556986326,41.3621325098284,0</coordinates></Point></Placemark>
+
+<Placemark><name>61390</name><description>261390 UPC VALS</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>1.18993164076658,41.3616106868001,0</coordinates></Point></Placemark>
+
+<Placemark><name>61530</name><description>261530 BRP VLRD</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>1.31432817580517,41.1707572260663,0</coordinates></Point></Placemark>
+
+<Placemark><name>70090</name><description>270090 UPC REGIÓ</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>0.640552508260223,41.0888476087746,0</coordinates></Point></Placemark>
+
+<Placemark><name>70092</name><description>270092 UPC REGIÓ</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>0.637368291414012,41.0880079781383,0</coordinates></Point></Placemark>
+
+<Placemark><name>72031</name><description>272031 BRP AMET</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>0.773849351966742,40.8942970633563,0</coordinates></Point></Placemark>
+
+<Placemark><name>72090</name><description>272090 UPC AMET</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.11817674580611,41.1508686266366,0</coordinates></Point></Placemark>
+
+<Placemark><name>72130</name><description>272130 BRP AMPO</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>0.570116025418912,40.7061802237071,0</coordinates></Point></Placemark>
+
+<Placemark><name>72148</name><description>272148 BUL AMPO</description><styleUrl>#w_VerdclarC</styleUrl><Point><coordinates>0.570092371023449,40.7061797274416,0</coordinates></Point></Placemark>
+
+<Placemark><name>91084</name><description>291084 UPCL/USL DG</description><styleUrl>#w_Verdclar</styleUrl><Point><coordinates>2.18744076249839,41.4464095520903,0</coordinates></Point></Placemark>
+
+<Placemark><name>AGRA01</name><description>230201 PORT AGRA</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.13189380906422,41.6689330832888,0</coordinates></Point></Placemark>
+
+<Placemark><name>ALCO04</name><description>260104 PORT ALCO</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.20703947436839,41.2102878846552,0</coordinates></Point></Placemark>
+
+<Placemark><name>ALCO05</name><description>260105 PORT ALCO</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.20691975840923,41.2103040416348,0</coordinates></Point></Placemark>
+
+<Placemark><name>AMPO56</name><description>272156 PORT.COM AMPO</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>0.57073636857756,40.7066976490518,0</coordinates></Point></Placemark>
+
+<Placemark><name>ASCO04</name><description>272204 PORT Ascó</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.568760383859754,41.1880020792363,0</coordinates></Point></Placemark>
+
+<Placemark><name>BAD57</name><description>240257 PORT.COM BAD</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.23765586493957,41.4662078337318,0</coordinates></Point></Placemark>
+
+<Placemark><name>BALA03</name><description>230603 PORT </description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.810045457520738,41.7901951635362,0</coordinates></Point></Placemark>
+
+<Placemark><name>BALA57</name><description>230657 PORT.COM </description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.810002329229068,41.790401485408,0</coordinates></Point></Placemark>
+
+<Placemark><name>BOSS01</name><description>208101 P.COMODIN VARAN</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.796704857033012,42.7080627639899,0</coordinates></Point></Placemark>
+
+<Placemark><name>CAF04</name><description>210404 PORT CAF</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.52728379866748,41.7308342979274,0</coordinates></Point></Placemark>
+
+<Placemark><name>CAMB56</name><description>260256 PORT.COM CAMB</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.04012300021571,41.076423781866,0</coordinates></Point></Placemark>
+
+<Placemark><name>CASS03</name><description>220803 PORT CASS</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.88337001505811,41.8797492524204,0</coordinates></Point></Placemark>
+
+<Placemark><name>CASS04</name><description>220804 PORT CASS</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.88317705309116,41.8798211111675,0</coordinates></Point></Placemark>
+
+<Placemark><name>CER08</name><description>240508 PORT CER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.11211433520125,41.5019431770341,0</coordinates></Point></Placemark>
+
+<Placemark><name>CERV03</name><description>230903 PORT CERV</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.26406553281707,41.6718538604989,0</coordinates></Point></Placemark>
+
+<Placemark><name>D1REMS</name><description>258041  SERVEIS REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03421813928376,41.3221437832039,0</coordinates></Point></Placemark>
+
+<Placemark><name>D4RELL</name><description>238044  SERVEIS REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.652094299696759,41.6153204388021,0</coordinates></Point></Placemark>
+
+<Placemark><name>D8REMN</name><description>248048  SERVEIS REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03475358520062,41.4734719137117,0</coordinates></Point></Placemark>
+
+<Placemark><name>E00RETE</name><description>270014 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.629950785379341,41.0860457506805,0</coordinates></Point></Placemark>
+
+<Placemark><name>E0REC</name><description>210012 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.85229993787543,41.7414351842003,0</coordinates></Point></Placemark>
+
+<Placemark><name>E0RELL</name><description>230012 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.14937126096776,41.6513098445866,0</coordinates></Point></Placemark>
+
+<Placemark><name>E0RET</name><description>260012 P.Tec REGIÓ</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.10934432463354,41.3999408455305,0</coordinates></Point></Placemark>
+
+<Placemark><name>FALS06</name><description>260406 PORT FALS</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.823262741114629,41.1477986095719,0</coordinates></Point></Placemark>
+
+<Placemark><name>FIGU09</name><description>221009 PORT FIGU</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.97017796379569,42.2718016674048,0</coordinates></Point></Placemark>
+
+<Placemark><name>GAND56</name><description>272656 PORT.COM GAND</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.438801673836777,41.0573171526444,0</coordinates></Point></Placemark>
+
+<Placemark><name>GD0REG</name><description>220011 P.Tec REGIÓ</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.80687622929607,41.9597791045104,0</coordinates></Point></Placemark>
+
+<Placemark><name>GD0RELL</name><description>230011 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.605343703928979,41.6238967886489,0</coordinates></Point></Placemark>
+
+<Placemark><name>GE00REG</name><description>220015 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.88390029957373,41.879749787743,0</coordinates></Point></Placemark>
+
+<Placemark><name>GE00REMN</name><description>240015 P.Tec REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.1118953690377,41.5021846878124,0</coordinates></Point></Placemark>
+
+<Placemark><name>GE0RET</name><description>260013 P.Tec REGIÓ</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.1141690517951,41.3985606335936,0</coordinates></Point></Placemark>
+
+<Placemark><name>HOS57</name><description>250757 PORT.COM HOS</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.10627217154419,41.3707244171556,0</coordinates></Point></Placemark>
+
+<Placemark><name>HOSP02</name><description>260502 PORT HOSP</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.920145016764195,40.9924249637038,0</coordinates></Point></Placemark>
+
+<Placemark><name>HOSP57</name><description>260557 PORT.COM HOSP</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.91996112422197,40.9933584168548,0</coordinates></Point></Placemark>
+
+<Placemark><name>HOST07</name><description>221207 PORT HOST</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.624685160867,41.7481385521827,0</coordinates></Point></Placemark>
+
+<Placemark><name>IGU10</name><description>250810 PORT IGU</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.60894539464556,41.5830920162102,0</coordinates></Point></Placemark>
+
+<Placemark><name>JONQ07</name><description>221307 PORT JONQ</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.9039494019692,42.3559183317349,0</coordinates></Point></Placemark>
+
+<Placemark><name>L.ESTASEN</name><description>219001 EXTERN EXTERN REGIÓ</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>1.71604782378547,42.2453717047843,0</coordinates></Point></Placemark>
+
+<Placemark><name>MAN07</name><description>211007 PORT MAN</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.85183951949607,41.7409532420399,0</coordinates></Point></Placemark>
+
+<Placemark><name>MAR07</name><description>251007 PORT MAR</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.90781239949635,41.498794915385,0</coordinates></Point></Placemark>
+
+<Placemark><name>MOI56</name><description>211156 PORT.COM MOI</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.09532187151815,41.8096265510649,0</coordinates></Point></Placemark>
+
+<Placemark><name>MONT05</name><description>260605 PORT MONT</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.10879715067098,41.4002471252244,0</coordinates></Point></Placemark>
+
+<Placemark><name>MORA07</name><description>272807 PORT MORA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.629813138745316,41.0862320741528,0</coordinates></Point></Placemark>
+
+<Placemark><name>MORA56</name><description>272856 PORT.COM MORA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.629813708618508,41.0865473283982,0</coordinates></Point></Placemark>
+
+<Placemark><name>MORA57</name><description>272857 PORT.COM MORA</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.629427056846783,41.0860440191008,0</coordinates></Point></Placemark>
+
+<Placemark><name>OP05081</name><description>205281  MAER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.10683517320192,41.5172957804315,0</coordinates></Point></Placemark>
+
+<Placemark><name>POBL02</name><description>232402 PORT POBL</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.963874961630261,42.2387912308693,0</coordinates></Point></Placemark>
+
+<Placemark><name>PRAD01</name><description>260701 PORT PRAD</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.987286928426899,41.3121953056166,0</coordinates></Point></Placemark>
+
+<Placemark><name>REUS02</name><description>260802 PORT REUS</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.1184618386053,41.1509002893117,0</coordinates></Point></Placemark>
+
+<Placemark><name>REUS13</name><description>260813 PORT REUS</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.11869072334163,41.150813942352,0</coordinates></Point></Placemark>
+
+<Placemark><name>RIBC02</name><description>232702 PORT RIBC</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.22496826225732,42.5630722322849,0</coordinates></Point></Placemark>
+
+<Placemark><name>SARR01</name><description>261101 PORT SARR</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.10841271768494,41.4003038758384,0</coordinates></Point></Placemark>
+
+<Placemark><name>SARR05</name><description>261105 PORT SARR</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.10895388932321,41.4002046580409,0</coordinates></Point></Placemark>
+
+<Placemark><name>SBO07</name><description>251307 PORT SBOI</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.03418956866235,41.3232694786964,0</coordinates></Point></Placemark>
+
+<Placemark><name>SCC02</name><description>251602 PORT SCC</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>2.00977293541136,41.3993465123337,0</coordinates></Point></Placemark>
+
+<Placemark><name>SCC07</name><description>251607 PORT SCC</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.00965927020083,41.3997418610555,0</coordinates></Point></Placemark>
+
+<Placemark><name>SFE02</name><description>251502 PORT SFE</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.04301710245857,41.3887278505643,0</coordinates></Point></Placemark>
+
+<Placemark><name>SFE04</name><description>251504 PORT SFE</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.0430472283558,41.3883047534373,0</coordinates></Point></Placemark>
+
+<Placemark><name>SOLS01</name><description>211901 PORT SOLS</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.51224879895907,41.9898560719214,0</coordinates></Point></Placemark>
+
+<Placemark><name>TER03</name><description>242003 PORT TER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.02603001959344,41.5681090451517,0</coordinates></Point></Placemark>
+
+<Placemark><name>TER08</name><description>242008 PORT TER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.11185745920814,41.5023285117772,0</coordinates></Point></Placemark>
+
+<Placemark><name>TER12</name><description>242012 PORT TER</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>2.02581132014644,41.5682963482907,0</coordinates></Point></Placemark>
+
+<Placemark><name>TMRT</name><description>268071  SERVEIS REGIÓ</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.21420919214666,41.0793965007299,0</coordinates></Point></Placemark>
+
+<Placemark><name>TORR03</name><description>222603 PORT TORR</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>3.16756048289865,42.0477052480048,0</coordinates></Point></Placemark>
+
+<Placemark><name>TREM05</name><description>233305 PORT TREM</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.889336352667594,42.1647456725469,0</coordinates></Point></Placemark>
+
+<Placemark><name>ULLD08</name><description>273108 PORT ULLD</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>0.358238639839217,40.6091002017839,0</coordinates></Point></Placemark>
+
+<Placemark><name>VALS07</name><description>261307 PORT VALS</description><styleUrl>#w_VerdclarP</styleUrl><Point><coordinates>1.17340377154286,41.3776350507675,0</coordinates></Point></Placemark>
+
+<Placemark><name>VIEL01</name><description>208001 P.COMODIN VARAN</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.796546970663279,42.7083839128949,0</coordinates></Point></Placemark>
+
+<Placemark><name>VIEL12</name><description>208012 P.PT VARAN</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.796678224333195,42.7081252876248,0</coordinates></Point></Placemark>
+
+<Placemark><name>VIEL17</name><description>208017 BASE CCA VARAN</description><styleUrl>#w_Groc</styleUrl><Point><coordinates>0.796286708893109,42.7078026077201,0</coordinates></Point></Placemark>
+
+<Placemark><name>VIL03</name><description>251903 PORT VIL</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.71374032812571,41.2199565113638,0</coordinates></Point></Placemark>
+
+<Placemark><name>VLRD05</name><description>261505 PORT VLRD</description><styleUrl>#w_GrocP</styleUrl><Point><coordinates>1.32748690317707,41.1754970869241,0</coordinates></Point></Placemark>
+
+</Folder></Document></kml>

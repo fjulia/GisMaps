@@ -14,6 +14,8 @@ import createWindow from "./helpers/window";
 // in config/env_xxx.json file.
 import env from "env";
 
+
+
 const setApplicationMenu = () => {
   const menus = [editMenuTemplate];
   if (env.name !== "production") {
