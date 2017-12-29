@@ -11,13 +11,15 @@ import "./helpers/external_links.js";
 import { remote } from "electron";
 import jetpack from "fs-jetpack";
 var log = require('electron-log');
-//import { greet } from "./hello_world/hello_world";
+import { send_message } from "./telegram/telegram_helper";
 import env from "env";
 
 const app = remote.app;
 const appDir = jetpack.cwd(app.getAppPath());
 const settings = require('electron-settings');
 
+var kmlfile = settings.get("kml.path");
+log.warn("Loading kmlFile from: " + kmlfile);
 //var map;
 
 var map;
@@ -26,19 +28,59 @@ var directionsService;
 var directionsDisplay;
 var geocoder;
 var geoXml;
-
-
+var marker;
+var infowindow;
+var printKml = false;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 41.476, lng: 2.038 },
-    zoom: 8
+    zoom: 8,
+    mapTypeControl: true,
+    streetViewControl: true,
+    rotateControl: true,
+    fullscreenControl: false
   });
 
+  google.maps.event.addListener(map, "rightclick", function (event) {
+    if (marker) marker.setMap(null);
+    var lat = event.latLng.lat();
+    var lng = event.latLng.lng();
+    var title = "Lat: " + lat + " " + "Lng: " + lng;
+    marker = createMarker(map, { lat: lat, lng: lng }, title);
+  });
+
+  google.maps.event.addListener(map, "zoom_changed", function (event) {
+    if (map.getZoom() > 13) {
+      this.printKml = true;
+    } else {
+      this.printKml = false;
+    }
+  });
+
+  infowindow = new google.maps.InfoWindow({ minWidth: 250, maxWidth: 300 });
   geoXml = new geoXML3.parser({
     map: map,
+    infowindow: infowindow,
     singleInfoWindow: true,
-    afterParse: useTheKmlData
+    /* createMarker: function (placemark, doc) {
+       //get the marker from the built-in createMarker-function
+       var marker=geoXML3.instances[0].createMarker(placemark, doc);
+       //modify the content
+       if(marker.infoWindow){
+         marker.infoWindowOptions.content=
+         '<div class="geoxml3_infowindow"><h3>' + placemark.name +
+         '</h3><div>' + placemark.description + '</div>'+
+         '<code onclick="map.setCenter(new google.maps.LatLng'+
+           marker.getPosition().toString()+
+         ');map.setZoom(map.getZoom()+1);">zoom in</code><br/>'+
+         '<code onclick="map.setCenter(new google.maps.LatLng'+
+           marker.getPosition().toString()+
+         ');map.setZoom(map.getZoom()-1);">zoom out</code>'+
+         '</div>';
+       }
+     return marker;
+   }*/
   });
 
   trafficLayer = new google.maps.TrafficLayer();
@@ -50,19 +92,36 @@ function initMap() {
   enableTraffic();
 }
 
+function clearKml(){
+  geoXml.parse(null);
+}
 function addKml() {
-  geoXml.parse('dades_kml/SIG_WAYPOINTS_DARRERES.kml');
+  if (printKml) {
+    setTimeout(function () {
+      geoXml.parse(kmlfile)
+    }, 60000);
+  }
+}
+
+//placing a marker on the map
+function createMarker(map, coords, title) {
+  var marker = new google.maps.Marker({
+    position: coords,
+    map: map,
+    label: 'A',
+    title: title,
+    draggable: false
+  });
+  marker.addListener('click', function () {
+    showMarkerInfo();
+  });
+  return marker;
+}
+
+function showMarkerInfo() {
 
 }
 
-function useTheKmlData(doc) {
-  // Geodata handling goes here, using JSON properties of the doc object
-
- /* for (var i = 0; i < doc[0].markers.length; i++) {
-      // console.log(doc[0].markers[i].title);
-      jQuery('#map_text').append(doc[0].markers[i].title + ', ');
-  }*/
-};
 
 
 function enableTraffic() {

@@ -1,39 +1,35 @@
 <!doctype html>
 <html>
+
 <head>
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
-    #map {
-      height: 100%;
-      width: 100%;
-    }
-    /* Optional: Makes the sample page fill the window. */
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+  <script type="text/javascript" href="vendor/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js" /></script>
+  <link rel="stylesheet" href="vendor/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" type="text/css" />
 </head>
-<body>
-  <div id="map"></div>
-  <script>
-  //  var map;
-    /*function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 41.476, lng: 2.038},
-        zoom: 8
-      });
-    }*/
-  </script>
-  <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwx0TiVW_p7-Agh-L1WXsnu3CqnQdBGg0&callback=initMap"
-  async defer></script>-->
 
+<body>
+  <div class="container">
+    <div id="map"></div>
+    <div id="search_bar" class="row">
+      <div class="offset-md-3 col-md-6">
+        <div id="imaginary_container">
+          <div class="input-group stylish-input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon">
+              <button type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <script src="app.js"></script>
   <script src="vendor/geoxml3/geoxml3.js"></script>
   <!--<script src="vendor/geoxml3/ProjectedOverlay.js"></script>-->
 </body>
+
 </html>
