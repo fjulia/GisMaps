@@ -3,7 +3,6 @@ import "./stylesheets/main.css";
 // Small helpers you might want to keep
 import "./helpers/context_menu.js";
 import "./helpers/external_links.js";
-
 // ----------------------------------------------------------------------------
 // Everything below is just to show you how it works. You can delete all of it.
 // ----------------------------------------------------------------------------
@@ -11,7 +10,7 @@ import "./helpers/external_links.js";
 import { remote } from "electron";
 import jetpack from "fs-jetpack";
 var log = require('electron-log');
-import { send_message } from "./telegram/telegram_helper";
+//import { send_message } from "./telegram/telegram_helper";
 import env from "env";
 
 const app = remote.app;
@@ -31,6 +30,8 @@ var geoXml;
 var marker;
 var infowindow;
 var printKml = false;
+var trafficEnabled = false;
+var gpsEnabled = false;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -51,18 +52,74 @@ function initMap() {
   });
 
   google.maps.event.addListener(map, "zoom_changed", function (event) {
-    if (map.getZoom() > 13) {
+    /*if (map.getZoom() > 13) {
       this.printKml = true;
+      doPrintKml();
     } else {
       this.printKml = false;
-    }
+      clearKml();
+    }*/
   });
 
   infowindow = new google.maps.InfoWindow({ minWidth: 250, maxWidth: 300 });
+
+
+  trafficLayer = new google.maps.TrafficLayer();
+  directionsService = new google.maps.DirectionsService;
+  directionsDisplay = new google.maps.DirectionsRenderer;
+  geocoder = new google.maps.Geocoder();
+
+  startKml();
+  initButtons();
+}
+function initButtons() {
+  var traffic_btn = document.querySelector("#traffic_btn");
+  traffic_btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    trafficEnabled = !trafficEnabled;
+    if (trafficEnabled) {
+      enableTraffic();
+      traffic_btn.className = "active";
+    } else {
+      disableTraffic();
+      traffic_btn.classList.remove("active");
+    }
+  });
+
+  var gps_btn = document.querySelector("#gps_btn");
+  gps_btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    gpsEnabled = !gpsEnabled;
+    if (gpsEnabled) {
+      gps_btn.className = "active";
+      dpPrintKml();
+    } else {
+      gps_btn.classList.remove("active");
+      clearKml();
+    }
+  });
+}
+
+
+function startKml() {
+  var self = this;
+  if (gpsEnabled) {
+    dpPrintKml();
+  } else {
+    clearKml();
+  }
+  setTimeout(function () {
+    startKml()
+  }, 60000);
+}
+
+function dpPrintKml() {
+  if(geoXml)geoXml.hideDocument();
   geoXml = new geoXML3.parser({
     map: map,
     infowindow: infowindow,
-    singleInfoWindow: true,
+    zoom:false,
+    singleInfoWindow: true
     /* createMarker: function (placemark, doc) {
        //get the marker from the built-in createMarker-function
        var marker=geoXML3.instances[0].createMarker(placemark, doc);
@@ -82,25 +139,11 @@ function initMap() {
      return marker;
    }*/
   });
-
-  trafficLayer = new google.maps.TrafficLayer();
-  directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer;
-  geocoder = new google.maps.Geocoder();
-
-  addKml();
-  enableTraffic();
+    geoXml.parse(kmlfile);
 }
 
-function clearKml(){
-  geoXml.parse(null);
-}
-function addKml() {
-  if (printKml) {
-    setTimeout(function () {
-      geoXml.parse(kmlfile)
-    }, 60000);
-  }
+function clearKml() {
+  if(geoXml)geoXml.hideDocument();
 }
 
 //placing a marker on the map
@@ -129,7 +172,7 @@ function enableTraffic() {
 }
 
 function disableTraffic() {
-  trafficLayer.setMap(map);
+  trafficLayer.setMap(null);
 }
 
 
@@ -190,6 +233,10 @@ function geocodeLatLng(geocoder, map, infowindow) {
   });
 }
 
+/*
+BOOTSTRAP
+Load maps api js and launch init()
+*/
 
 if (!settings.has("api.key")) {
   log.error("App has no Settings file or it is incorrect. Api key not found!")
@@ -197,7 +244,11 @@ if (!settings.has("api.key")) {
 } else {
   var apiKey = settings.get("api.key");
   log.warn("GoogleMaps API key: " + apiKey);
-  loadScript('https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=initMap', initMap);
+  try {
+    loadScript('https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=initMap', initMap);
+  } catch (err) {
+    //catch initmap callback error
+  }
 }
 
 function loadScript(url, callback) {
@@ -216,21 +267,3 @@ function loadScript(url, callback) {
   head.appendChild(script);
 }
 
-// Holy crap! This is browser window with HTML and stuff, but I can read
-// files from disk like it's node.js! Welcome to Electron world :)
-/*const manifest = appDir.read("package.json", "json");
-
-const osMap = {
-  win32: "Windows",
-  darwin: "macOS",
-  linux: "Linux"
-};
-
-document.querySelector("#app").style.display = "block";
-document.querySelector("#greet").innerHTML = greet();
-document.querySelector("#os").innerHTML = osMap[process.platform];
-document.querySelector("#author").innerHTML = manifest.author;
-document.querySelector("#env").innerHTML = env.name;
-document.querySelector("#electron-version").innerHTML =
-  process.versions.electron;
-  */

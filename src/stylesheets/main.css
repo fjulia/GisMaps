@@ -49,7 +49,37 @@ border-color:#ccc;
   border:0;
   background:transparent;
 }
-
 /*Search bar end*/
 
+#traffic_btn{
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+}
 
+#traffic_btn.active{
+  background-color: #0dad3d;
+}
+
+#traffic_btn img{
+  height: 31px;
+  width: 26px;
+}
+
+#gps_btn{
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+#gps_btn.active{
+  background-color: #0dad3d;
+}
+
+#gps_btn img{
+  height: 31px;
+  width: 26px;
+}
