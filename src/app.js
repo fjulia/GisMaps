@@ -9,8 +9,16 @@ import "./helpers/external_links.js";
 
 import { remote } from "electron";
 import jetpack from "fs-jetpack";
+const TelegramBot = require('node-telegram-bot-api');
 var log = require('electron-log');
-//import { send_message } from "./telegram/telegram_helper";
+import { send_message } from "./telegram/telegram_helper";
+
+
+
+// replace the value below with the Telegram token you receive from @BotFather
+
+
+
 import env from "env";
 
 const app = remote.app;
@@ -19,6 +27,11 @@ const settings = require('electron-settings');
 
 var kmlfile = settings.get("kml.path");
 log.warn("Loading kmlFile from: " + kmlfile);
+
+const token = settings.get("telegram.botToken");
+const groupId = settings.get("telegram.groupId");
+// Create a bot
+const bot = new TelegramBot(token, { polling: false });
 //var map;
 
 var map;
@@ -32,6 +45,7 @@ var infowindow;
 var printKml = false;
 var trafficEnabled = false;
 var gpsEnabled = false;
+var autocomplete;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -71,6 +85,7 @@ function initMap() {
 
   startKml();
   initButtons();
+  initAutocomplete();
 }
 function initButtons() {
   var traffic_btn = document.querySelector("#traffic_btn");
@@ -100,6 +115,21 @@ function initButtons() {
   });
 }
 
+function initAutocomplete() {
+  // Create the autocomplete object, restricting the search to geographical
+  // location types.
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+      {types: ['geocode']});
+
+  // When the user selects an address from the dropdown, populate the address
+  // fields in the form.
+  autocomplete.addListener('place_changed', selectedAddress);
+}
+
+function selectedAddress(){
+  debugger;
+}
 
 function startKml() {
   var self = this;
@@ -113,37 +143,39 @@ function startKml() {
   }, 60000);
 }
 
+
 function dpPrintKml() {
-  if(geoXml)geoXml.hideDocument();
+  var infowindow = new google.maps.InfoWindow({ minWidth: 250, maxWidth: 300 });
+  if (geoXml) geoXml.hideDocument();
   geoXml = new geoXML3.parser({
     map: map,
     infowindow: infowindow,
-    zoom:false,
-    singleInfoWindow: true
+    zoom: false,
+    singleInfoWindow: 1,
     /* createMarker: function (placemark, doc) {
        //get the marker from the built-in createMarker-function
-       var marker=geoXML3.instances[0].createMarker(placemark, doc);
+       var marker = geoXML3.instances[0].createMarker(placemark, doc);
        //modify the content
-       if(marker.infoWindow){
-         marker.infoWindowOptions.content=
-         '<div class="geoxml3_infowindow"><h3>' + placemark.name +
-         '</h3><div>' + placemark.description + '</div>'+
-         '<code onclick="map.setCenter(new google.maps.LatLng'+
-           marker.getPosition().toString()+
-         ');map.setZoom(map.getZoom()+1);">zoom in</code><br/>'+
-         '<code onclick="map.setCenter(new google.maps.LatLng'+
-           marker.getPosition().toString()+
-         ');map.setZoom(map.getZoom()-1);">zoom out</code>'+
-         '</div>';
+       if (marker.infoWindow) {
+         marker.infoWindowOptions.content =
+           '<div class="geoxml3_infowindow"><h3>' + placemark.name +
+           '</h3><div>' + placemark.description + '</div>' +
+           '<code onclick="map.setCenter(new google.maps.LatLng' +
+           marker.getPosition().toString() +
+           ');map.setZoom(map.getZoom()+1);">zoom in</code><br/>' +
+           '<code onclick="map.setCenter(new google.maps.LatLng' +
+           marker.getPosition().toString() +
+           ');map.setZoom(map.getZoom()-1);">zoom out</code>' +
+           '</div>';
        }
-     return marker;
-   }*/
+       return marker;
+     }*/
   });
-    geoXml.parse(kmlfile);
+  geoXml.parse(kmlfile);
 }
 
 function clearKml() {
-  if(geoXml)geoXml.hideDocument();
+  if (geoXml) geoXml.hideDocument();
 }
 
 //placing a marker on the map
@@ -233,6 +265,8 @@ function geocodeLatLng(geocoder, map, infowindow) {
   });
 }
 
+
+
 /*
 BOOTSTRAP
 Load maps api js and launch init()
@@ -245,7 +279,7 @@ if (!settings.has("api.key")) {
   var apiKey = settings.get("api.key");
   log.warn("GoogleMaps API key: " + apiKey);
   try {
-    loadScript('https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=initMap', initMap);
+    loadScript('https://maps.googleapis.com/maps/api/js?v=3&key=' + apiKey + '&callback=initMap&libraries=places', initMap);
   } catch (err) {
     //catch initmap callback error
   }
