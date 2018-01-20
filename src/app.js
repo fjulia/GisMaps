@@ -23,13 +23,13 @@ import env from "env";
 
 const app = remote.app;
 const appDir = jetpack.cwd(app.getAppPath());
-const settings = require('electron-settings');
+const settings = jetpack.read('./Settings.js','json');
 
-var kmlfile = settings.get("kml.path");
+var kmlfile = settings.kml.path;
 log.warn("Loading kmlFile from: " + kmlfile);
 
-const token = settings.get("telegram.botToken");
-const groupId = settings.get("telegram.groupId");
+const token = settings.telegram.botToken;
+const groupId = settings.telegram.groupId;
 // Create a bot
 const bot = new TelegramBot(token, { polling: false });
 //var map;
@@ -82,20 +82,32 @@ function initMap() {
   trafficLayer = new google.maps.TrafficLayer();
   directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
+  directionsDisplay.setMap(map);
   geocoder = new google.maps.Geocoder();
 
   marker = new google.maps.Marker({
     map: map,
-    anchorPoint: new google.maps.Point(0, -29)
+    label: 'A',
+    draggable: false
   });
-  autocomplete = new google.maps.places.Autocomplete(
+
+  marker.addListener('click', function () {
+    showMarkerInfo(false);
+  });
+
+  marker.addListener('rightclick', function () {
+    showMarkerInfo(false);
+  });
+
+ autocomplete = new google.maps.places.Autocomplete(
     (document.getElementById('autocomplete')),
-    { types: ['geocode'], componentRestrictions: { country: 'es' } });
+    { componentRestrictions: { country: 'es' } });
   autocomplete.bindTo('bounds', map);
   autocomplete.addListener('place_changed', selectedAddress);
 
   startKml();
   initButtons();
+
 }
 function initButtons() {
   var traffic_btn = document.querySelector("#traffic_btn");
@@ -142,15 +154,20 @@ function selectedAddress() {
     map.setCenter(place.geometry.location);
     map.setZoom(17);  // Why 17? Because it looks good.
   }
-  marker.setIcon(/** @type {google.maps.Icon} */({
+  /*marker.setIcon(({
     url: place.icon,
     size: new google.maps.Size(71, 71),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(17, 34),
     scaledSize: new google.maps.Size(35, 35)
-  }));
+  }));*/
   marker.setPosition(place.geometry.location);
   marker.setVisible(true);
+
+  var dst = {};
+  dst.lat = place.geometry.location.lat();
+  dst.lng = place.geometry.location.lng();
+  calculateAndDisplayRoute(directionsService, directionsDisplay,settings.origin,dst);
 }
 
 function startKml() {
@@ -210,13 +227,25 @@ function createMarker(map, coords, title) {
     draggable: false
   });
   marker.addListener('click', function () {
-    showMarkerInfo();
+    showMarkerInfo(true);
+  });
+  marker.addListener('rightclick', function () {
+    showMarkerInfo(true);
   });
   return marker;
 }
 
-function showMarkerInfo() {
-
+function showMarkerInfo(route) {
+  var contentString;
+  if (route){
+    contentString = "<div id='telegram_btn'><button>Telegram</button></div><div id='route_btn'><button>Ruta</button></div>";
+  }else{
+    contentString = "<div><button>Telegram</button></div>";
+  }
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+  infowindow.open(map, marker);
 }
 
 
@@ -230,10 +259,10 @@ function disableTraffic() {
 }
 
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+function calculateAndDisplayRoute(directionsService, directionsDisplay,origin,dest) {
   directionsService.route({
-    origin: document.getElementById('start').value,
-    destination: document.getElementById('end').value,
+    origin: origin,
+    destination: dest,
     travelMode: 'DRIVING'
   }, function (response, status) {
     if (status === 'OK') {
@@ -245,8 +274,6 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 }
 
 
-/*
-Posiciona adreça al mapa*/
 function geocodeAddress(address, geocoder, resultsMap) {
   geocoder.geocode({ 'address': address }, function (results, status) {
     if (status === 'OK') {
@@ -294,16 +321,18 @@ BOOTSTRAP
 Load maps api js and launch init()
 */
 
-if (!settings.has("api.key")) {
-  log.error("App has no Settings file or it is incorrect. Api key not found!")
+
+
+if (!jetpack.exists("./Settings.js")) {
+  alert("App has no Settings file or it is incorrect. Api key not found!");
   app.exit(1);
 } else {
-  var apiKey = settings.get("api.key");
+  var apiKey = settings.api.key;
   log.warn("GoogleMaps API key: " + apiKey);
   try {
     loadScript('https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&libraries=places', initMap);
   } catch (err) {
-    //catch initmap callback error
+    console.log(err);
   }
 }
 
