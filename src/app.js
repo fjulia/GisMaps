@@ -8,11 +8,13 @@ import "./helpers/external_links.js";
 // ----------------------------------------------------------------------------
 
 import { remote } from "electron";
+var dialog = remote.dialog;
 import jetpack from "fs-jetpack";
 const TelegramBot = require('node-telegram-bot-api');
 var log = require('electron-log');
-import { send_message } from "./telegram/telegram_helper";
+const notifier = require('node-notifier');
 
+import { sendTelegramMessage, sendTelegramLocation, loadGroupId } from "./telegram/telegram_helper";
 
 
 // replace the value below with the Telegram token you receive from @BotFather
@@ -23,13 +25,18 @@ import env from "env";
 
 const app = remote.app;
 const appDir = jetpack.cwd(app.getAppPath());
-const settings = jetpack.read('./Settings.js','json');
+var settings = jetpack.read('./Settings.js', 'json');
 
 var kmlfile = settings.kml.path;
 log.warn("Loading kmlFile from: " + kmlfile);
 
-const token = settings.telegram.botToken;
-const groupId = settings.telegram.groupId;
+var token = settings.telegram.botToken;
+var groupId = settings.telegram.groupId;
+var groupName = settings.telegram.groupName;
+
+document.querySelector("#token").value = token
+document.querySelector("#groupName").value = groupName;
+document.querySelector("#groupId").value = groupId;
 // Create a bot
 const bot = new TelegramBot(token, { polling: false });
 //var map;
@@ -99,7 +106,7 @@ function initMap() {
     showMarkerInfo(false);
   });
 
- autocomplete = new google.maps.places.Autocomplete(
+  autocomplete = new google.maps.places.Autocomplete(
     (document.getElementById('autocomplete')),
     { componentRestrictions: { country: 'es' } });
   autocomplete.bindTo('bounds', map);
@@ -135,15 +142,64 @@ function initButtons() {
       clearKml();
     }
   });
+
+  var settings_btn = document.querySelector("#settings_btn");
+  settings_btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    document.querySelector("#config_win").style.display = "block";
+  });
+
+  var close_config_btn = document.querySelector("#close_config_btn");
+  close_config_btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    document.querySelector("#config_win").style.display = "none";
+  });
+
+  var configBnt = document.querySelector("#configBnt");
+  configBnt.addEventListener("click", function (event) {
+    event.preventDefault();
+    updateTokenConfig();
+  });
+
+  var testBnt = document.querySelector("#testBnt");
+  testBnt.addEventListener("click", function (event) {
+    event.preventDefault();
+    testTelegram();
+  });
 }
 
+function updateTokenConfig() {
+  token = document.querySelector("#token").value;
+  settings.telegram.botToken = token;
+  groupName = document.querySelector("#groupName").value;
+  settings.telegram.groupName = groupName;
+  groupId = document.querySelector("#groupId").value;
+  if (groupId.length == 0) {
+    loadGroupId(bot, groupName).then((groupId) => {
+      settings.telegram.groupId = groupId;
+      document.querySelector("#groupId").value = groupId;
+      jetpack.write('./Settings.js', settings);
+    });
+  } else {
+    settings.telegram.groupId = groupId;
+  }
+  jetpack.write('./Settings.js', settings);
+}
+
+function testTelegram() {
+  sendTelegramMessage(bot, groupId, "Hola!!!").then(() => {
+    dialog.showMessageBox({ type: "info", message: "Missatge enviat comprova el telegram!" });
+  }).error((err) => {
+    doalog.showErrorBox("Test Fallat", "Assegure't de configurar primer el telegram");
+  })
+}
 
 function selectedAddress() {
   var place = autocomplete.getPlace();
   if (!place.geometry) {
     // User entered the name of a Place that was not suggested and
     // pressed the Enter key, or the Place Details request failed.
-    window.alert("No details available for input: '" + place.name + "'");
+    window.alert("No details available   for input: '" + place.name + "'");
     return;
   }
 
@@ -167,7 +223,19 @@ function selectedAddress() {
   var dst = {};
   dst.lat = place.geometry.location.lat();
   dst.lng = place.geometry.location.lng();
-  calculateAndDisplayRoute(directionsService, directionsDisplay,settings.origin,dst);
+  calculateAndDisplayRoute(directionsService, directionsDisplay, settings.origin, dst);
+
+  //Send telegram location
+  sendLocation(bot, groupId, dst.lat, dst.lng, place.name);
+}
+
+function sendLocation(bot, groupId, lat, lng, name) {
+  sendTelegramLocation(bot, groupId, lat, lng).then(() => {
+    notifier.notify('Notificacio enviada!');
+    console.log("Sent location success!");
+  }).error((err) => {
+    dialog.showErrorBox("Error Telegram", "No s'ha pogut enviar el missatge al telegram");
+  })
 }
 
 function startKml() {
@@ -227,20 +295,20 @@ function createMarker(map, coords, title) {
     draggable: false
   });
   marker.addListener('click', function () {
-    showMarkerInfo(true);
+    showMarkerInfo(true, coords);
   });
   marker.addListener('rightclick', function () {
-    showMarkerInfo(true);
+    showMarkerInfo(true, coords);
   });
   return marker;
 }
 
-function showMarkerInfo(route) {
+function showMarkerInfo(route, position) {
   var contentString;
-  if (route){
-    contentString = "<div id='telegram_btn'><button>Telegram</button></div><div id='route_btn'><button>Ruta</button></div>";
-  }else{
-    contentString = "<div><button>Telegram</button></div>";
+  if (route) {
+    contentString = "<div id='telegram_btn'><button onclick='telegramFromMarker(" + position.lat + "," + position.lng + ")'>Telegram</button></div><div id='route_btn'><button onclick='routeFromMarker(" + position.lat + "," + position.lng + ")'>Ruta</button></div>";
+  } else {
+    contentString = "<div><button onclick='telegramFromMarker(" + position.lat + "," + position.lng + ")'>Telegram</button></div>";
   }
   var infowindow = new google.maps.InfoWindow({
     content: contentString
@@ -248,6 +316,16 @@ function showMarkerInfo(route) {
   infowindow.open(map, marker);
 }
 
+window.telegramFromMarker = function (lat, lng) {
+  sendLocation(bot, groupId, lat, lng, "");
+}
+
+window.routeFromMarker = function (lat, lng) {
+  var dst = {};
+  dst.lat = lat;
+  dst.lng = lng;
+  calculateAndDisplayRoute(directionsService, directionsDisplay, settings.origin, dst);
+}
 
 
 function enableTraffic() {
@@ -259,7 +337,7 @@ function disableTraffic() {
 }
 
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay,origin,dest) {
+function calculateAndDisplayRoute(directionsService, directionsDisplay, origin, dest) {
   directionsService.route({
     origin: origin,
     destination: dest,

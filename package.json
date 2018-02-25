@@ -31,9 +31,11 @@
     "release": "npm test && webpack --config=build/webpack.app.config.js --env=production && electron-builder"
   },
   "dependencies": {
+    "bootstrap": "4.0.0-beta.3",
     "electron-log": "^2.2.13",
     "electron-settings": "^3.1.4",
     "fs-jetpack": "^1.0.0",
+    "node-notifier": "^5.2.1",
     "node-telegram-bot-api": "^0.30.0"
   },
   "devDependencies": {

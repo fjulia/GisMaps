@@ -87,3 +87,36 @@ border-color:#ccc;
 #route_btn{
   margin-top: 10px;
 }
+
+.floatting-buttons-img{
+  width: 31px;
+}
+
+
+#config_win {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  display:none;
+  box-shadow: -10px 0px 10px 1px #aaaaaa;
+}
+#config_win {
+  z-index: 10;
+}
+
+.row-bordered:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+#config-header{
+  margin: 15px;
+}
+
+.headerTitle{
+  text-align: center;
+}

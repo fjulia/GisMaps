@@ -5,11 +5,51 @@
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
   <script type="text/javascript" href="vendor/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js" /></script>
-  <link rel="stylesheet" href="vendor/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="vendor/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" type="text/css" />
 </head>
 
 <body>
   <div class="container">
+    <div id="config_win">
+      <div class="container">
+        <div class="row row-bordered">
+          <div class="col-sm" id="config-header">
+            <button class="btn btn-default" id="close_config_btn">Tanca </button>
+          </div>
+        </div>
+        <div class="card card-outline-secondary">
+          <div class="col-sm">
+            <div class="card-header">
+              <h3 class="mb-0">Configuració</h3>
+            </div>
+            <div class="card-body">
+              <form class="form" role="form" autocomplete="off">
+                <div class="form-group">
+                  <label for="inputToken">Telegram Token</label>
+                  <input type="text" class="form-control" id="token" placeholder="Token">
+                </div>
+                <div class="form-group">
+                    <label for="inputGroupName">Telegram Nom Grup</label>
+                    <input type="text" class="form-control" id="groupName" placeholder="Nom Grup" required="">
+                  </div>
+                <div class="form-group">
+                  <label for="inputGroup">Telegram groupId</label>
+                  <input type="text" class="form-control" id="groupId" placeholder="GroupId" required="">
+                </div>
+                <div class="form-group">
+                    <label for="inputGroup">Escriure al grup /start@nomdelbot</label>
+                  </div>
+                <div class="form-group" >
+                  <button type="submit" id="configBnt" class="btn btn-success float-right">Configura</button>
+                  <button type="submit" id="testBnt" class="btn btn-default float-left">Test</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /form card register -->
+        </div>
+      </div>
+    </div>
     <div id="map"></div>
     <div id="search_bar" class="row">
       <div class="offset-md-3 col-md-6">
@@ -24,21 +64,26 @@
           </div>
         </div>
       </div>
-    </div>
-    <div  class="row justify-content-end">
-      <div class="col-1">
-        <button id="traffic_btn" class="">
-          <img src="images/traffic-icon.png"/>
+      <div class="offset-md-2 col-1">
+        <button id="settings_btn" class="">
+          <img class="floatting-buttons-img" src="images/settings-512.png" />
         </button>
       </div>
     </div>
-    <div  class="row justify-content-end">
-        <div class="col-1">
-          <button id="gps_btn" class="">
-            <img src="images/gps-icon.png"/>
-          </button>
-        </div>
+    <div class="row justify-content-end">
+      <div class="col-1">
+        <button id="traffic_btn" class="">
+          <img class="floatting-buttons-img" src="images/traffic-icon.png" />
+        </button>
       </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-1">
+        <button id="gps_btn" class="">
+          <img class="floatting-buttons-img" src="images/gps-icon.png" />
+        </button>
+      </div>
+    </div>
   </div>
   <script src="app.js"></script>
   <script src="vendor/geoxml3/geoxml3.js"></script>
