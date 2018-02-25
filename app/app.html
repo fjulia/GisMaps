@@ -17,37 +17,44 @@
             <button class="btn btn-default" id="close_config_btn">Tanca </button>
           </div>
         </div>
-        <div class="card card-outline-secondary">
-          <div class="col-sm">
-            <div class="card-header">
-              <h3 class="mb-0">Configuració</h3>
-            </div>
-            <div class="card-body">
-              <form class="form" role="form" autocomplete="off">
-                <div class="form-group">
-                  <label for="inputToken">Telegram Token</label>
-                  <input type="text" class="form-control" id="token" placeholder="Token">
-                </div>
-                <div class="form-group">
+        <div class="">
+          <div class="card card-outline-secondary">
+            <div class="col-sm">
+              <div class="card-header">
+                <h3 class="mb-0">Configuració</h3>
+              </div>
+              <div class="card-body">
+                <form class="form" role="form" autocomplete="off">
+                  <div class="form-group">
+                    <label for="inputToken">Telegram Token</label>
+                    <input type="text" class="form-control" id="token" placeholder="Token">
+                  </div>
+                  <div class="form-group">
                     <label for="inputGroupName">Telegram Nom Grup</label>
                     <input type="text" class="form-control" id="groupName" placeholder="Nom Grup" required="">
                   </div>
-                <div class="form-group">
-                  <label for="inputGroup">Telegram groupId</label>
-                  <input type="text" class="form-control" id="groupId" placeholder="GroupId" required="">
-                </div>
-                <div class="form-group">
+                  <div class="form-group">
+                    <label for="inputGroup">Telegram groupId</label>
+                    <input type="text" class="form-control" id="groupId" placeholder="GroupId" required="">
+                  </div>
+                  <div class="form-group">
                     <label for="inputGroup">Escriure al grup /start@nomdelbot</label>
                   </div>
-                <div class="form-group" >
-                  <button type="submit" id="configBnt" class="btn btn-success float-right">Configura</button>
-                  <button type="submit" id="testBnt" class="btn btn-default float-left">Test</button>
-                </div>
-              </form>
+                  <div class="form-group">
+                      <label for="inputToken">Arxiu Emisores</label>
+                      <input type="text" class="form-control" id="kmlPath" placeholder="arxiu emisores">
+                    </div>
+                  <div class="form-group">
+                    <button type="submit" id="configBnt" class="btn btn-success float-right">Configura</button>
+                    <button type="submit" id="testBnt" class="btn btn-default float-left">Test Telegram</button>
+                  </div>
+
+                </form>
+              </div>
             </div>
           </div>
-          <!-- /form card register -->
         </div>
+        <!-- /form card register -->
       </div>
     </div>
     <div id="map"></div>
@@ -56,6 +63,7 @@
         <div id="imaginary_container">
           <div class="input-group stylish-input-group">
             <input id="autocomplete" type="text" class="form-control" placeholder="Buscar">
+            <input id="autocomplete2" type="text" class="form-control" placeholder="Buscar">
             <span class="input-group-addon">
               <button type="submit">
                 <span class="glyphicon glyphicon-search"></span>

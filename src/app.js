@@ -27,9 +27,9 @@ const app = remote.app;
 const appDir = jetpack.cwd(app.getAppPath());
 var settings = jetpack.read('./Settings.js', 'json');
 
-var kmlfile = settings.kml.path;
-log.warn("Loading kmlFile from: " + kmlfile);
 
+log.warn("Loading kmlFile from: " + kmlfile);
+var kmlfile = settings.kml.path;
 var token = settings.telegram.botToken;
 var groupId = settings.telegram.groupId;
 var groupName = settings.telegram.groupName;
@@ -37,6 +37,7 @@ var groupName = settings.telegram.groupName;
 document.querySelector("#token").value = token
 document.querySelector("#groupName").value = groupName;
 document.querySelector("#groupId").value = groupId;
+document.querySelector("#kmlPath").value = kmlfile;
 // Create a bot
 const bot = new TelegramBot(token, { polling: false });
 //var map;
@@ -183,6 +184,8 @@ function updateTokenConfig() {
   } else {
     settings.telegram.groupId = groupId;
   }
+  kmlfile = document.querySelector("#kmlPath").value;
+  settings.kml.path = kmlfile;
   jetpack.write('./Settings.js', settings);
 }
 
